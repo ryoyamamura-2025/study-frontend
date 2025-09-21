@@ -10,6 +10,7 @@ weatherForm.addEventListener("submit", (e) => {
 })
 
 const getWeather = (city) => {
+    weatherResults.innerHTML = `<div class="loading"></div>`;
     fetch(`https://api.weatherapi.com/v1/current.json?key=ffe74e56c302433f8b9132505252109&q=${city}&aqi=n`)
     .then(response => response.json())
     .then(jsonData => weatherResults.innerHTML = 
@@ -21,4 +22,8 @@ const getWeather = (city) => {
             <span>${jsonData.current.condition.text}</span>
         </div>`
     )
+    .catch(e => {
+        weatherResults.innerHTML = "";
+        alert(`エラーが発生しました: ${e.message}`)
+    })
 };
