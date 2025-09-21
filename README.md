@@ -7,6 +7,7 @@ HTML/CSS/JavaScriptの勉強用リポジトリ
 ### リンク集
 - [天気アプリ Web ページ本体](https://javascript-book-weather-app.netlify.app/)
 - [ダウンロードリンク](https://monotein-books.netlify.app/files/js-weather-book/)
+- [Weather API](https://www.weatherapi.com)
 
 ## 参考
 - 以下の Visual Studio Code の拡張機能を追加
